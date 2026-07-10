@@ -1,4 +1,4 @@
-# ✨ NEXUS DRAW — Neon Void Air Drawing
+# ✨ MR DRAW — Neon Void Air Drawing
 
 > **Draw in mid-air. Your hand is the only light.**
 > 
@@ -14,7 +14,7 @@
 <p align="center">
   <b>Live:</b> <code>python -m http.server 8000</code> → open on https<br/>
   <b>Stack:</b> Vanilla ES Modules + WebGL + Canvas 2D — No framework bloat<br/>
-  <b>Made in:</b> Chennai, IN • Est. 2026
+  <b>Made in:</b> Coimbatore, IN • Est. 2026
 </p>
 
 ---
@@ -137,8 +137,8 @@ Cursor: white dot + colored ring, `DRAW` label when drawing, `LIFTED ✓` when l
 
 ```bash
 # clone
-git clone https://github.com/your-user/nexus-draw.git
-cd nexus-draw
+git clone https://github.com/Mowshik1210/MR-DRAW.git
+cd MR-DRAW
 
 # serve (camera needs secure context or localhost)
 python3 -m http.server 8000
@@ -183,7 +183,7 @@ Place screenshots in /assets:
 
 ### 👤 Creator
 
-**NEXUS LAB — Chennai, IN**
+**MR DRAW — Coimbatore, IN**
 > *"The hand should remain in full natural color. Everything else blends into black. The interface should feel futuristic, elegant, cinematic." — Original brief, kept intact.*
 
 Immersive web obsessive, building void canvases where the only light is you.
