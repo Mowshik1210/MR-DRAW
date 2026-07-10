@@ -188,8 +188,8 @@ Place screenshots in /assets:
 
 Immersive web obsessive, building void canvases where the only light is you.
 
-- 🌐 `nexus-void.app`
-- ✉️ `hello@nexus-void.app`
+- 🌐 `mrdraw.dharshanmowshik.workers.dev`
+- ✉️ `dharshanmowshik@gmail,com`
 - 💼 Open to immersive installs, art, product labs
 
 ---

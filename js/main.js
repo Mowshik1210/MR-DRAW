@@ -98,7 +98,7 @@ if(sendBtn){
     const msg = document.getElementById('cMsg')?.value || '';
     const subject = encodeURIComponent(`NEXUS Void inquiry from ${name}`);
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${msg}\n\n---\nSent from NEXUS DRAW landing`);
-    window.location.href = `mailto:hello@nexus-void.app?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:dharshanmowshik@gmail.com?subject=${subject}&body=${body}`;
   });
 }
 
