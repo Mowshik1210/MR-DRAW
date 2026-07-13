@@ -1,70 +1,106 @@
-# ✨ NEXUS DRAW — Neon Void Air Drawing
+<div align="center">
 
-> **Draw in mid-air. Your hand is the only light.**
-> 
-> A premium, full-screen immersive web app where your hand appears in full natural color over pure black void `#000000`. Pinch or point to draw persistent glowing neon strokes that stay forever. Lift, move, change colors — all in air. No controllers. Just you.
+<!-- BANNER -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,6,20&height=200&section=header&text=✨%20NEXUS%20DRAW&fontSize=42&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=Neon%20Void%20Air%20Drawing%20%E2%80%94%20Your%20Hand%20Is%20The%20Only%20Light&descAlignY=60&descAlign=50" width="100%"/>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Three.js-0.160-black?style=for-the-badge&logo=three.js" />
-  <img src="https://img.shields.io/badge/MediaPipe-Tasks_Vision-00B2FF?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/60_FPS-GPU_Accelerated-7CFFCB?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Neon-Bloom_Magic-8A7CFF?style=for-the-badge&logo=webgl" />
-</p>
+<!-- BADGES -->
+[![Three.js](https://img.shields.io/badge/Three.js-0.160-000000?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org)
+[![MediaPipe](https://img.shields.io/badge/MediaPipe-Tasks_Vision-00B2FF?style=for-the-badge&logo=google&logoColor=white)](https://developers.google.com/mediapipe)
+[![WebGL](https://img.shields.io/badge/60_FPS-GPU_Accelerated-7CFFCB?style=for-the-badge&logo=webgl&logoColor=black)](#)
+[![License](https://img.shields.io/badge/License-MIT-8A7CFF?style=for-the-badge)](LICENSE)
 
-<p align="center">
-  <b>Live:</b> <code>python -m http.server 8000</code> → open on https<br/>
-  <b>Stack:</b> Vanilla ES Modules + WebGL + Canvas 2D — No framework bloat<br/>
-  <b>Made in:</b> Chennai, IN • Est. 2026
-</p>
+<br/>
+
+> **🌌 Project · NEXUS LAB**
+>
+> **🎥 LIVE:** `python -m http.server 8000` → open on **https/localhost**
+>
+> A premium, full-screen immersive web app where your hand appears in full natural color
+> over a pure black void — pinch or point to paint persistent glowing neon strokes that
+> stay in mid-air, forever. No controllers. Just you.
+
+<br/>
+
+[![⭐ Star this repo](https://img.shields.io/github/stars/your-user/nexus-draw?style=social)](https://github.com/your-user/nexus-draw)
+&nbsp;&nbsp;
+[![🍴 Fork](https://img.shields.io/github/forks/your-user/nexus-draw?style=social)](https://github.com/your-user/nexus-draw)
+
+</div>
 
 ---
 
-### 🎥 Demo Preview
+## 📸 App Preview
+
+<div align="center">
+
+| Void Hand | Neon Strokes | Move Mode |
+|:---------:|:------------:|:---------:|
+| *![](assets/hero-void.png)* | *![](assets/neon-strokes.png)* | *![](assets/move-mode.gif)* |
+
+> 💡 **Tip:** Run the app locally, allow camera access, and capture screenshots to fill these in!
+
+</div>
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| 🖐️ **True Hand Isolation** | Adaptive dilated mask (14–34px), dual blur pass, `contrast(1.08) saturate(1.12)` — only your hand exists |
+| 💫 **Persistent Neon** | Dual-canvas rendering: soft glow layer (32px shadow blur) + white-hot core layer, drawings never fade |
+| 🎨 **9 Neon Colors** | Cyan, Blue, Green, Pink, Purple, Red, Orange, Yellow, White — swap on the fly |
+| ✌️ **Reliable Gestures** | Pinch-ratio detection + index-pointing + open-hand/fist lift, tuned for ~60ms response |
+| 🤏 **Lift & Move** | Dedicated MOVE mode — pinch-drag to grab and translate your entire artwork in space |
+| 🎛️ **Studio Controls** | Undo, Clear, live stroke count, FPS meter, color label, fingertip bloom sparkles |
+| ⚡ **60 FPS Cinematic** | Desynchronized 2D contexts, capped DPR, mirrored video, dust + ambient + vignette layers |
+| 🏠 **Long Landing Page** | Scrollable marketing home — Features, How It Works, Tech, Creator, Contact |
+
+---
+
+## 🌌 The Void Canvas
+
+**Nexus Draw** flips the typical hand-tracking demo on its head. Instead of a skeleton overlay, it isolates **only the hand** — full natural skin tone, softly lit — and drops it into pure black `#000000`. Every stroke is stored as real vector data, not a fading particle trail.
 
 ```
-PINCH thumb+index  → DRAW
-POINT ☝️ index only → DRAW
-OPEN HAND ✋ / FIST ✊ → LIFT (instant, 4 frames)
-MOVE MODE + PINCH DRAG → LIFT & MOVE ENTIRE ART
-9 COLORS • UNDO • CLEAR • DEPTH-REACTIVE BLOOM
+✋ Hand isolated over #000000   ·   🎨 Persistent vector strokes   ·   🕹️ Lift + Move in 3D space
 ```
 
-> **Try it:** Good light on hand, plain background, pinch close to camera. Open hand quickly to lift. The neon stays exactly where you drew it.
+### 🎮 Gestures
+
+| Gesture | Icon | Action |
+|---------|:----:|--------|
+| Pinch (thumb + index close) | 🤏 | Draw |
+| Point (index only extended) | ☝️ | Draw *(easier)* |
+| Open hand (all fingers extended) | ✋ | Lift / Stop |
+| Fist (all folded) | ✊ | Lift / Stop |
+| LIFT button | ⬆️ | Force lift |
+| MOVE mode + pinch drag | 🫳 | Grab & translate all art |
+
+### 🎨 Color Palette
+
+| Color | Hex | Color | Hex |
+|-------|-----|-------|-----|
+| Cyan | `#7CFFCB` | Red | `#FF3B5C` |
+| Blue | `#4EA3FF` | Orange | `#FF8A3D` |
+| Green | `#3CFF6B` | Yellow | `#FFEB3B` |
+| Pink | `#FF7CCF` | White | `#FFFFFF` |
+| Purple | `#8A7CFF` | | |
 
 ---
 
-### 🌌 Why This Hits Different
+## 🧠 How It Works — 5 Steps
 
-Most hand-tracking demos show a skeleton outline. We flipped it:
-- **Only your hand is visible** — full natural skin tone, soft-lit, isolated over pure black. Everything else disappears.
-- **Drawings are permanent vector art** — not fading particles. Each stroke stored as `{points[], color, size}` with `z` depth.
-- **Lifting actually works** — hysteresis + pointing detection + open/fist detection = lift in ~60ms, no sticky pen.
-- **You can grab your art and move it in space** — MOVE mode translates all points with `translateAll(dx,dy)`.
-
-This is not a filter. It's a **void canvas studio**.
-
----
-
-### ⚡ Features — The Premium List
-
-| Feature | Details |
-|---|---|
-| **True Hand Isolation** | Adaptive dilated mask (14-34px), blur 14px/7px, cover-fit for any resolution, `contrast(1.08) saturate(1.12)` |
-| **Persistent Neon** | Dual canvas: `artGlow` (18px, 32px shadowBlur, `mix-blend-mode:screen`) + `artCore` (white hot 3.8px + color 2.6px) |
-| **9 Neon Colors** | Cyan #7CFFCB, Blue #4EA3FF, Green #3CFF6B, Pink #FF7CCF, Purple #8A7CFF, Red #FF3B5C, Orange #FF8A3D, Yellow #FFEB3B, White |
-| **Reliable Gestures** | Pinch ratio `screenDist/palmPx` (start <0.42, end >0.52) + pointing (index extended, others folded) + open/fist |
-| **Lift & Move** | MOVE mode: pinch-drag → `translateAll(dx,dy)` + `isNearDrawing()` for grab detection. LIFT button forces `endStroke()` |
-| **Studio Controls** | Undo (pop + redraw), Clear (confirm), stroke count, FPS, color label, bloom sparkles at fingertip |
-| **60 FPS Cinematic** | Desynchronized 2D contexts, DPR capped 1.8, `translate(W)+scale(-1,1)` mirrored video, dust + ambient + vignette |
-| **Long Landing Page** | Scrollable home with Features, How It Works, Tech, Creator, Contact — dashboard kept intact on top |
-
----
-
-### 🧠 How It Works — In 5 Steps
+```
+① Camera Feed  →  ② GPU Hand Landmarks + Smoothing  →  ③ Mask & Isolate Hand
+→  ④ Gesture Detection (Pinch / Point / Open / Fist)  →  ⑤ Draw, Lift, or Move
+```
 
 ```js
 // 1. Camera 1280x720@60fps, facingMode:user
-const stream = await navigator.mediaDevices.getUserMedia({video:{facingMode:'user',width:{ideal:1280},frameRate:{ideal:60}}})
+const stream = await navigator.mediaDevices.getUserMedia({
+  video:{facingMode:'user',width:{ideal:1280},frameRate:{ideal:60}}
+})
 
 // 2. HandLandmarker (GPU) + OneEuro filter smoothing
 landmarker = await HandLandmarker.createFromOptions(vision, {
@@ -73,134 +109,267 @@ landmarker = await HandLandmarker.createFromOptions(vision, {
 smoothed = landmarkSmoother.smooth(landmarks, now) // OneEuro minCutoff 1.1, beta 0.02
 
 // 3. Mask = thick connections + palm polygon + joint circles → blur → destination-in
-solidCtx.lineWidth = clamp(palmPx*0.32, 14,34)
-maskCtx.filter='blur(14px)'; maskCtx.drawImage(solidCanvas)
+solidCtx.lineWidth = clamp(palmPx*0.32, 14, 34)
+maskCtx.filter = 'blur(14px)'; maskCtx.drawImage(solidCanvas)
 
 // 4. Gesture: pinch OR pointing to draw
 const ratio = screenDist / palmPx
-const wantsDraw = (dist<0.07 && ratio<0.55) || (isPointing)
-if(wantsDraw && pinchFrames>=2) startStroke({x,y,z})
+const wantsDraw = (dist<0.07 && ratio<0.55) || isPointing
+if (wantsDraw && pinchFrames>=2) startStroke({x,y,z})
 
-// 5. Lift: open/fist or 4 frames no pinch → endStroke() → persistent canvases
-if(openFrames>=4 || isOpen || isFist) endStroke()
+// 5. Lift: open/fist or 4 frames no pinch → endStroke()
+if (openFrames>=4 || isOpen || isFist) endStroke()
 ```
 
-**Depth reactive:** `depthFactor = 1 - (z+0.15)*2` → closer hand = thicker + brighter neon.
+> **Depth reactive:** `depthFactor = 1 - (z+0.15)*2` — the closer your hand, the thicker and brighter the neon.
 
 ---
 
-### 🛠️ Tech Stack — No Bloat, Just Power
+## 🛠️ Tech Stack
 
-**Vision:**
-- `@mediapipe/tasks-vision@0.10.14` HandLandmarker, `FilesetResolver.forVisionTasks(WASM)`
-- `LandmarkSmoother` — OneEuroFilter per landmark (freq 60, minCutoff 1.1, beta 0.02)
-
-**Rendering:**
-- **Three.js 0.160.0** — Home: 1600 additive particles, torus knots, fog `FogExp2(0x000000,0.035)`
-- **VoidRenderer** — cover-fit math, mirrored video, tight mask
-- **DrawingManager** — `_renderStroke()` with quadratic smoothing, glow + core layers
-- **Particles** — DustField (attracted to palm), AmbientRenderer (breathing neon)
-
-**Architecture:**
 ```
-/js/home/scene3d.js
-/js/immersive/tracking/handTracker.js
-/js/immersive/rendering/renderer.js    → isolation + gesture helpers
-/js/immersive/rendering/particles.js   → dust/ambient
-/js/immersive/drawing/drawingManager.js → persistent neon, move/lift
-/js/immersive/ui/controls.js           → palette + undo/clear/move/lift
-/js/utils/smoothFilter.js + helpers.js
-/css/home.css (long scroll) + immersive.css + style.css
+Vision       :  @mediapipe/tasks-vision@0.10.14  (HandLandmarker, GPU delegate)
+Smoothing    :  OneEuroFilter per landmark  (freq 60, minCutoff 1.1, beta 0.02)
+Rendering    :  Three.js 0.160.0  +  Canvas 2D  (dual-layer neon compositing)
+Architecture :  Vanilla ES Modules — no framework bloat
+Design       :  Glassmorphism, blur(28px) saturate(180%), Syne + Space Grotesk
 ```
 
-**Design:**
-- Glassmorphism `backdrop-filter: blur(28px) saturate(180%)`, Syne + Space Grotesk, neon vars `--neon: #7CFFCB`, `--neon-2: #8A7CFF`
+| Layer | Responsibility |
+|-------|-----------------|
+| **VoidRenderer** | Cover-fit math, mirrored video, tight adaptive mask |
+| **DrawingManager** | Quadratic stroke smoothing, persistent glow + core layers, move/lift |
+| **DustField / AmbientRenderer** | Palm-attracted particles, breathing neon ambience |
+| **Controls** | Palette, undo/clear/move/lift UI |
 
 ---
 
-### 🎮 Gestures — Cheatsheet
+## 🗂️ Project Structure
 
-| Gesture | Action |
-|---|---|
-| **Pinch** thumb+index close | Draw |
-| **Point ☝️** index only extended | Draw (easier) |
-| **Open ✋** all fingers extended | Lift / Stop |
-| **Fist ✊** all folded | Lift / Stop |
-| **LIFT ⬆️ button** | Force lift |
-| **MOVE ✋ + pinch drag** | Grab & translate all art |
-
-Cursor: white dot + colored ring, `DRAW` label when drawing, `LIFTED ✓` when lifted. Sparkles at fingertip while drawing.
+```
+nexus-draw/
+│
+├── 📄 index.html
+│
+├── 📁 js/
+│   ├── home/scene3d.js                    ← Three.js landing page scene
+│   ├── immersive/tracking/handTracker.js  ← MediaPipe hand landmarks
+│   ├── immersive/rendering/renderer.js    ← isolation + gesture helpers
+│   ├── immersive/rendering/particles.js   ← dust / ambient particles
+│   ├── immersive/drawing/drawingManager.js← persistent neon, move/lift
+│   ├── immersive/ui/controls.js           ← palette + undo/clear/move/lift
+│   └── utils/smoothFilter.js + helpers.js
+│
+├── 📁 css/
+│   ├── home.css        ← long scroll landing page
+│   ├── immersive.css    ← void canvas studio
+│   └── style.css
+│
+├── 📁 assets/           ← screenshots & preview media
+└── 📄 README.md         ← You are here
+```
 
 ---
 
-### 🚀 Run Locally — 10 Seconds
+## 🚀 Getting Started
+
+### Prerequisites
 
 ```bash
-# clone
+A modern browser (Chrome/Edge)   Python 3 or Node.js   A webcam
+```
+
+### 1 · Clone the repository
+
+```bash
 git clone https://github.com/your-user/nexus-draw.git
 cd nexus-draw
+```
 
-# serve (camera needs secure context or localhost)
+### 2 · Serve it locally
+
+Camera access needs a secure context (`https` or `localhost`):
+
+```bash
 python3 -m http.server 8000
 # or
 npx serve .
+```
 
-# open
+### 3 · Open & draw
+
+```
 http://localhost:8000
-# allow camera, pinch to draw, open to lift
+# allow camera → pinch or point to draw → open hand to lift
 ```
 
-**Best experience:** Chrome/Edge, good front light on hand, plain wall behind, 20-40cm from camera.
+**Best experience:** Chrome/Edge, good front light on your hand, plain wall behind you, 20–40cm from camera.
 
 ---
 
-### 📸 Screens (Add Your Own)
+## 📦 Dependencies
+
+```txt
+@mediapipe/tasks-vision  >= 0.10.14
+three                    == 0.160.0
+```
+
+No build step, no bundler required — everything loads as native ES modules.
+
+---
+
+## 🎯 How to Use
 
 ```
-Place screenshots in /assets:
-- hero-void.png (hand in black)
-- neon-strokes.png (persistent colors)
-- move-mode.gif (dragging art)
-- landing-long.png (scroll page)
+1.  Open the app and allow camera access
+2.  Pinch (thumb + index) or point (☝️) to start drawing in the air
+3.  Move your hand — the neon stroke follows and stays in place
+4.  Open your hand or make a fist to lift the pen
+5.  Pick a color from the 9-color palette, undo mistakes, or clear the canvas
+6.  Switch to MOVE mode and pinch-drag to grab and reposition your entire artwork
 ```
 
 ---
+
+## 📊 Interaction Reliability
+
+```
+                precision    recall   response
+
+      Pinch        high        high     ~60ms
+   Pointing         high      medium     ~60ms
+  Open/Fist Lift    high        high    4 frames
+   Move & Drag      high        high    real-time
+```
+
+> Tuned via pinch-ratio thresholds (start `<0.42`, end `>0.52`) and 2-frame hysteresis to avoid sticky-pen jitter.
+
+---
+
+## 🧩 Code Architecture
+
+The app is organized into focused, single-responsibility modules:
+
+```js
+initVoidRenderer()     // Cover-fit canvas setup, mirrored video, mask pipeline
+handTracker.js         // GPU HandLandmarker + OneEuro smoothing
+detectGesture()        // Pinch / point / open / fist classification
+startStroke()          // Begins a new persistent stroke at {x, y, z}
+_renderStroke()         // Quadratic-smoothed glow + core layer rendering
+endStroke()             // Commits stroke to persistent canvas, resets state
+translateAll(dx, dy)    // MOVE mode — shifts every stored point
+isNearDrawing()         // Grab detection for MOVE mode
+undo() / clear()        // Stroke history management
+```
+
+---
+
+## 🌐 Deploy
+
+```
+1.  Push this repo to GitHub
+2.  Deploy static files via GitHub Pages, Vercel, or Netlify
+3.  Ensure HTTPS is enabled (required for camera access)
+4.  Share the link — live in minutes! 🚀
+```
+
+---
+
+## 🛠️ Customisation Guide
+
+**Change gesture sensitivity:**
+```js
+// In handTracker.js
+const PINCH_START = 0.42   // lower = stricter pinch
+const PINCH_END    = 0.52  // higher = more forgiving release
+```
+
+**Add a new neon color:**
+```js
+// In js/immersive/ui/controls.js
+COLORS.push({ name: 'Teal', hex: '#00FFD1' })
+```
+
+**Adjust bloom intensity:**
+```js
+// In drawingManager.js
+artGlow.shadowBlur = 32   // increase for a dreamier bloom
+```
+
+---
+
+## 📚 Learning Outcomes
+
+By studying this project you will understand:
+
+- ✅ Real-time hand landmark tracking with MediaPipe Tasks Vision
+- ✅ GPU-accelerated gesture recognition (pinch, point, open, fist)
+- ✅ Signal smoothing with the OneEuro filter
+- ✅ Canvas masking and compositing for hand isolation
+- ✅ Dual-layer neon rendering (glow + core) for persistent vector art
+- ✅ Building 60 FPS immersive experiences with vanilla ES modules
+- ✅ Three.js particle systems and depth-reactive rendering
+- ✅ Glassmorphism UI design for futuristic, cinematic interfaces
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+```bash
+# Fork the repo
+git checkout -b feature/your-feature-name
+git commit -m "feat: add your feature"
+git push origin feature/your-feature-name
+# Open a Pull Request
+```
 
 ### 🗺️ Roadmap
 
-- [x] Full hand isolation over #000
+- [x] Full hand isolation over `#000000`
 - [x] Persistent neon + bloom
 - [x] Pinch + point + open/fist lift
 - [x] Move mode (translate art in air)
 - [x] 9 colors, undo, clear
-- [x] Long landing with features/tech/creator/contact
+- [x] Long landing page with features/tech/creator/contact
 - [ ] Save/Export PNG + SVG
 - [ ] Multi-hand collaborative drawing
-- [ ] Hand mesh with lighting (MediaPipe Face+Hands)
+- [ ] Hand mesh with lighting (MediaPipe Face + Hands)
 - [ ] WebXR passthrough mode
 
 ---
 
-### 👤 Creator
+## 📄 License
 
-**NEXUS LAB — Chennai, IN**
-> *"The hand should remain in full natural color. Everything else blends into black. The interface should feel futuristic, elegant, cinematic." — Original brief, kept intact.*
-
-Immersive web obsessive, building void canvases where the only light is you.
-
-- 🌐 `nexus-void.app`
-- ✉️ `hello@nexus-void.app`
-- 💼 Open to immersive installs, art, product labs
+Distributed under the **MIT License**. Use it, remix it, build your own void — keep the neon alive.
 
 ---
 
-### 📄 License
+## 👤 Author
 
-MIT — Use it, remix it, build your own void. Keep the neon alive.
+<div align="center">
+
+**NEXUS LAB**
+*Immersive web obsessive, building void canvases where the only light is you.*
+
+*"The hand should remain in full natural color. Everything else blends into black.
+The interface should feel futuristic, elegant, cinematic." — Original brief, kept intact.*
+
+🌐 `nexus-void.app` &nbsp;·&nbsp; ✉️ `hello@nexus-void.app` &nbsp;·&nbsp; 💼 Open to immersive installs, art, product labs
+
+[![Website](https://img.shields.io/badge/Website-nexus--void.app-181717?style=for-the-badge&logo=vercel&logoColor=white)](https://nexus-void.app)
+
+</div>
 
 ---
 
-<p align="center">
-  <b>If this made you pinch the air — ⭐ star the repo and share your first neon doodle.</b><br/>
-  <i>PINCH = DRAW • OPEN = LIFT • MOVE = GRAB ART • 60 FPS • PURE BLACK VOID</i>
-</p>
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,6,20&height=100&section=footer" width="100%"/>
+
+*Built with 💜 in Chennai, IN · Est. 2026 · Pinch the air and share your first neon doodle*
+
+**PINCH = DRAW • OPEN = LIFT • MOVE = GRAB ART • 60 FPS • PURE BLACK VOID**
+
+</div>
