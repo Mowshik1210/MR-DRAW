@@ -358,7 +358,7 @@ The interface should feel futuristic, elegant, cinematic." — Original brief, k
 
 🌐 `mrdraw.dharshanmowshik.workers.dev` &nbsp;·&nbsp; ✉️ `dharshanmowshik@gmail.com` &nbsp;·&nbsp; 💼 Open to immersive installs, art, product labs
 
-[![Website](https://img.shields.io/badge/Website-nexus--void.app-181717?style=for-the-badge&logo=vercel&logoColor=white)](https://mrdraw.dharshanmowshik.workers.dev)
+[![Website](https://img.shields.io/badge/Website-MR-DRAW-181717?style=for-the-badge&logo=vercel&logoColor=white)](https://mrdraw.dharshanmowshik.workers.dev)
 
 </div>
 
