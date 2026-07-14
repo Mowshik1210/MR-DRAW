@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- BANNER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,6,20&height=200&section=header&text=✨%20NEXUS%20DRAW&fontSize=42&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=Neon%20Void%20Air%20Drawing%20%E2%80%94%20Your%20Hand%20Is%20The%20Only%20Light&descAlignY=60&descAlign=50" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,6,20&height=200&section=header&text=✨%20MR%20DRAW&fontSize=42&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=Neon%20Void%20Air%20Drawing%20%E2%80%94%20Your%20Hand%20Is%20The%20Only%20Light&descAlignY=60&descAlign=50" width="100%"/>
 
 <!-- BADGES -->
 [![Three.js](https://img.shields.io/badge/Three.js-0.160-000000?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org)
@@ -11,9 +11,9 @@
 
 <br/>
 
-> **🌌 Project · NEXUS LAB**
+> **🌌 Project · MR DRAW**
 >
-> **🎥 LIVE:** `python -m http.server 8000` → open on **https/localhost**
+> **🎥 LIVE:** (Click here to Explore)![https://mrdraw.dharshanmowshik.workers.dev]
 >
 > A premium, full-screen immersive web app where your hand appears in full natural color
 > over a pure black void — pinch or point to paint persistent glowing neon strokes that
@@ -37,7 +37,7 @@
 |:---------:|:------------:|:---------:|
 | *![](assets/hero-void.png)* | *![](assets/neon-strokes.png)* | *![](assets/move-mode.gif)* |
 
-> 💡 **Tip:** Run the app locally, allow camera access, and capture screenshots to fill these in!
+
 
 </div>
 
@@ -60,7 +60,7 @@
 
 ## 🌌 The Void Canvas
 
-**Nexus Draw** flips the typical hand-tracking demo on its head. Instead of a skeleton overlay, it isolates **only the hand** — full natural skin tone, softly lit — and drops it into pure black `#000000`. Every stroke is stored as real vector data, not a fading particle trail.
+**MR DRAW** flips the typical hand-tracking demo on its head. Instead of a skeleton overlay, it isolates **only the hand** — full natural skin tone, softly lit — and drops it into pure black `#000000`. Every stroke is stored as real vector data, not a fading particle trail.
 
 ```
 ✋ Hand isolated over #000000   ·   🎨 Persistent vector strokes   ·   🕹️ Lift + Move in 3D space
@@ -147,7 +147,7 @@ Design       :  Glassmorphism, blur(28px) saturate(180%), Syne + Space Grotesk
 ## 🗂️ Project Structure
 
 ```
-nexus-draw/
+MR-DRAW/
 │
 ├── 📄 index.html
 │
@@ -182,8 +182,8 @@ A modern browser (Chrome/Edge)   Python 3 or Node.js   A webcam
 ### 1 · Clone the repository
 
 ```bash
-git clone https://github.com/your-user/nexus-draw.git
-cd nexus-draw
+git clone https://github.com/your-user/MR-DRAW.git
+cd MR-DRAW
 ```
 
 ### 2 · Serve it locally
@@ -350,15 +350,15 @@ Distributed under the **MIT License**. Use it, remix it, build your own void —
 
 <div align="center">
 
-**NEXUS LAB**
+**MR DRAW**
 *Immersive web obsessive, building void canvases where the only light is you.*
 
 *"The hand should remain in full natural color. Everything else blends into black.
 The interface should feel futuristic, elegant, cinematic." — Original brief, kept intact.*
 
-🌐 `nexus-void.app` &nbsp;·&nbsp; ✉️ `hello@nexus-void.app` &nbsp;·&nbsp; 💼 Open to immersive installs, art, product labs
+🌐 `mrdraw.dharshanmowshik.workers.dev` &nbsp;·&nbsp; ✉️ `dharshanmowshik@gmail.com` &nbsp;·&nbsp; 💼 Open to immersive installs, art, product labs
 
-[![Website](https://img.shields.io/badge/Website-nexus--void.app-181717?style=for-the-badge&logo=vercel&logoColor=white)](https://nexus-void.app)
+[![Website](https://img.shields.io/badge/Website-nexus--void.app-181717?style=for-the-badge&logo=vercel&logoColor=white)](https://mrdraw.dharshanmowshik.workers.dev)
 
 </div>
 
@@ -368,7 +368,7 @@ The interface should feel futuristic, elegant, cinematic." — Original brief, k
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,6,20&height=100&section=footer" width="100%"/>
 
-*Built with 💜 in Chennai, IN · Est. 2026 · Pinch the air and share your first neon doodle*
+*Built with 💜 in Coimbatore, IN · Est. 2026 · Pinch the air and share your first neon doodle*
 
 **PINCH = DRAW • OPEN = LIFT • MOVE = GRAB ART • 60 FPS • PURE BLACK VOID**
 
