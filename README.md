@@ -21,9 +21,9 @@
 
 <br/>
 
-[![⭐ Star this repo](https://img.shields.io/github/stars/your-user/nexus-draw?style=social)](https://github.com/your-user/nexus-draw)
+[![⭐ Star this repo](https://img.shields.io/github/stars/your-user/nexus-draw?style=social)](https://github.com/Mowshik1210/MR-DRAW)
 &nbsp;&nbsp;
-[![🍴 Fork](https://img.shields.io/github/forks/your-user/nexus-draw?style=social)](https://github.com/your-user/nexus-draw)
+[![🍴 Fork](https://img.shields.io/github/forks/your-user/nexus-draw?style=social)](https://github.com/Mowshik1210/MR-DRAW)
 
 </div>
 
