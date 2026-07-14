@@ -13,7 +13,7 @@
 
 > **🌌 Project · MR DRAW**
 >
-> **🎥 LIVE:** (Click here to Explore)[https://mrdraw.dharshanmowshik.workers.dev]
+> **🎥 LIVE:** [Click here to Explore](https://mrdraw.dharshanmowshik.workers.dev)
 >
 > A premium, full-screen immersive web app where your hand appears in full natural color
 > over a pure black void — pinch or point to paint persistent glowing neon strokes that
